@@ -33,17 +33,17 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| Web1     |          | 10.0.0.5   |                  |
-| Web2     |          |            |                  |
-| elk      |          |            |                  |
+| Jump Box | Gateway  | 10.0.0.4   | Linux            |
+| Web1     | Webserver| 10.0.0.5   | Linus            |
+| Web2     | Webserver| 10.0.0.6   | Linux            |
+| elk      | Webserver| 10.2.0.5   | Linux            |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- 107.77.237.137 (Hotspot IP Address will change each time)
 
 Machines within the network can only be accessed by _____.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
@@ -52,9 +52,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes                 | 107.77.237.137       |
+| Web1     | No                  | 10.0.0.4             |
+| Web2     | No                  | 10.0.0.4             |
+| elk      | No                  | 10.0.0.4             |
 
 ### Elk Configuration
 
