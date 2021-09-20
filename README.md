@@ -2,11 +2,11 @@
 
 The files in this repository were used to configure the network depicted below.
 
-[Diagrams/Network Diagram.pdf](https://github.com/mkitta7/ansible/blob/00e43e9fdaa794699f69a35c2a7da7545f181a41/Diagrams/Network%20Diagram.pdf) 
+- [Diagrams/Network Diagram.pdf](https://github.com/mkitta7/ansible/blob/00e43e9fdaa794699f69a35c2a7da7545f181a41/Diagrams/Network%20Diagram.pdf) 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  - [my-playbook.yml] (https://github.com/mkitta7/ansible/blob/47712488ae4a94a41a1e3669fd06e9385cfe0efb/Linux/my-playbook.yml)
 
 This document contains the following details:
 - Description of the Topologu
