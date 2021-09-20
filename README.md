@@ -90,9 +90,13 @@ SSH into the control node and follow the steps below:
 - Update the _____ file to include...
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Playbook is located in my-playbook.yml which is copied to the /etc/ansible#
+- To make ansible run the playbook you will update the host file with the IP address of those virtual machines you want to be able to run it on.  Elk server should be installed on your vm that is monitoring the filebeat and will be linked to the Kibana.  Filebeat is installed on the webservers you wish to monitor and have data sent to Kibana.
+- To check that the elk server is running you can access Kibana at URL 20.94.248.50:5601/app/kibana, you can also check through the Azure portal as well as do a systems check through your terminal.
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+### Bonus Steps
+Here are the following commands to run the download, update and etc for the playbook:
+- nano my-playbook.yml then copy and paste the provided yml file to your vm
+- 
+
