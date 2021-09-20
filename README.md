@@ -98,5 +98,5 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 ### Bonus Steps
 Here are the following commands to run the download, update and etc for the playbook:
 - nano my-playbook.yml then copy and paste the provided yml file to your vm
-- 
+- To run the playbook: ansible-playbook my-playbook.yml
 
