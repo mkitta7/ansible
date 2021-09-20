@@ -86,13 +86,13 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the filebeat-config.yml file to /etc/ansible.
+- Update the filebeat-config.yml file to include...
+- Run the playbook, and navigate to URL http://VM-IP-address:5601/app/kibana to check that the installation worked as expected.
 
 - Playbook is located in my-playbook.yml which is copied to the /etc/ansible#
 - To make ansible run the playbook you will update the host file with the IP address of those virtual machines you want to be able to run it on.  Elk server should be installed on your vm that is monitoring the filebeat and will be linked to the Kibana.  Filebeat is installed on the webservers you wish to monitor and have data sent to Kibana.
-- To check that the elk server is running you can access Kibana at URL 20.94.248.50:5601/app/kibana, you can also check through the Azure portal as well as do a systems check through your terminal.
+- To check that the elk server is running use curl localhost/setup.php
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 ### Bonus Steps
